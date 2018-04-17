@@ -4979,7 +4979,7 @@
                         var $element = $$$1(this);
                         var data = $element.data(DATA_KEY);
 
-                        if (!data) {
+                        if (!data && data!=undefined) {
                             data = new Text($element, config);
                             $element.data(DATA_KEY, data);
                         }
